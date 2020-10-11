@@ -1,0 +1,22 @@
+{
+  "name": "discordjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.8",
+    "ms": "^2.1.2",
+    "nodemon": "^2.0.4",
+    "quick.db": "^7.1.2",
+    "table": "^6.0.3"
+  }
+}
