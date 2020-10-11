@@ -26,6 +26,7 @@ run: run = async(client,message,tugas) => {
             res.forEach(element => {
                 count++;
                 
+                
                 // if(res.length) {
                     const embed =  new discord.MessageEmbed()
                     .setColor('#DC143C')
