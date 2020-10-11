@@ -4,7 +4,7 @@ const discord = require('discord.js');
 module.exports = {
     run: async(client,message) => {
 
-        const embed =  new discord.MessageEmbed()
+        const commandembed =  new discord.MessageEmbed()
                     .setColor('#90EE90')
                     .setTitle('Commands list')
                     .addFields(
