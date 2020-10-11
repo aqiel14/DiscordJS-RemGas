@@ -6,7 +6,7 @@ module.exports = {
 
         const embed =  new discord.MessageEmbed()
                     .setColor('#90EE90')
-                    .setTitle('Commands list'+count)
+                    .setTitle('Commands list')
                     .addFields(
                         {name: '?tugas', value:"Masukkin tugas"},
                         {name: '?deadline', value: "Liat deadline-deadline tugas"},
