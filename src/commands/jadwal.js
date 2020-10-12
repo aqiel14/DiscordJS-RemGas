@@ -7,7 +7,7 @@ module.exports = {
         const jadwalembed =  new discord.MessageEmbed()
                     .setColor('#90EE90')
                     .setTitle('Jadwal')
-                    .setImage('https://imgur.com/a/9K8ZQtH')
+                    .setImage('https://i.imgur.com/iQDoWwJ.png')
         message.reply(jadwalembed);
     },
     

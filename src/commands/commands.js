@@ -10,7 +10,8 @@ module.exports = {
                     .addFields(
                         {name: '?tugas', value:"Masukkin tugas"},
                         {name: '?deadline', value: "Liat deadline-deadline tugas"},
-                        {name: '?deltugas', value: "Delete tugas berdasarkan desc"}
+                        {name: '?deltugas', value: "Delete tugas berdasarkan desc"},
+                        {name: '?jadwal', value: 'lihat jadwal'}
                     )
         message.reply(commandembed);
     },
