@@ -27,7 +27,7 @@ run: run = async(client,message,tugas) => {
             res.forEach(element => {
                 count++;
 
-                var time = Deadline - currentdate;
+                var time = element.Deadline - currentdate;
                 var seconds = moment.duration(time).seconds();
                 var minutes = moment.duration(time).minutes();
                 var hours   = moment.duration(time).hours();
