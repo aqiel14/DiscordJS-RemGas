@@ -27,12 +27,13 @@ run: run = async(client,message,tugas) => {
             res.forEach(element => {
                 count++;
 
-                var time = element.Deadline - currentdate;
-                var seconds = moment.duration(time).seconds();
-                var minutes = moment.duration(time).minutes();
-                var hours   = moment.duration(time).hours();
-                var days    = moment.duration(time).days();
-                console.log(days+' '+hours+' ',+minutes+' '+seconds);
+                let time = element.Deadline - currentdate;
+                let seconds = moment.duration(time).seconds();
+                let minutes = moment.duration(time).minutes();
+                let hours   = moment.duration(time).hours();
+                let days    = moment.duration(time).days();
+                console.log(days+' Days '+hours+' Hours ');
+                let timeRemaining = days+' Days '+hours+' Hours Remaining'
                 
                 
                 // if(res.length) {
@@ -45,11 +46,11 @@ run: run = async(client,message,tugas) => {
                         {name: 'Individu/Kelompok', value : element.Jenis},
                         {name: 'Pengumpulan', value: element.Pengumpulan},
                         {name: 'Yang masukkin Tugas', value:element.Author},
-                        {name: 'Deadline', value: element.Deadline}
+                        {name: 'Deadline', value: element.Deadline},
+                        {name: 'Time Remaining' ,value: timeRemaining}
                     )
             
                             message.channel.send(embed);
-                            console.log(element.Pengumpulan);
                             // console.log(res[0].Matkul);
                 // } else {
                 //     message.reply("Lagi gak ada tugas euy");
