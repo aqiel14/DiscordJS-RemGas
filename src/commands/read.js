@@ -31,13 +31,12 @@ run: run = async(client,message,tugas) => {
                     const embed =  new discord.MessageEmbed()
                     .setColor('#DC143C')
                     .setTitle('Tugas #'+count)
-                    .setDescription('KErJAIN SEKARANG!!!!')
                     .addFields(
-                        {name: 'Yang masukkin Tugas', value:element.Author},
                         {name: 'Matkul', value: element.Matkul},
                         {name: 'Desc', value: element.Desc},
                         {name: 'Individu/Kelompok', value : element.Jenis},
                         {name: 'Pengumpulan', value: element.Pengumpulan},
+                        {name: 'Yang masukkin Tugas', value:element.Author},
                         {name: 'Deadline', value: element.Deadline}
                     )
             
