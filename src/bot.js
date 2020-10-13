@@ -37,6 +37,9 @@ client.on('message', async function(message) {
     if(client.commands.get(cmdName)) {
         client.commands.get(cmdName)(client,message,argsToParse);
     }
+    if(message.content.startsWith(PREFIX) && !message.content.slice(PREFIX.length)) {
+        1=1;
+    }
     else {
         message.reply("Command doesnt exist!");
     }
