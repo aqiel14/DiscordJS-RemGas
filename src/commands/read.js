@@ -34,7 +34,7 @@ run: run = async(client,message,tugas) => {
                 let days    = moment.duration(time).days();
                 let timeRemaining = days+' Days '+hours+' Hours Remaining'
                 
-                const format = moment().format(element.Deadline)
+                const format = moment(element.Deadline).format('MMMM Do YYYY, h:mm:ss a')
                 console.log(format)
                 
                 // if(res.length) {
