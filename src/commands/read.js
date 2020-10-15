@@ -34,8 +34,7 @@ run: run = async(client,message,tugas) => {
                 let days    = moment.duration(time).days();
                 let timeRemaining = days+' Days '+hours+' Hours Remaining'
                 
-                const format = moment(element.Deadline).format('MMMM Do YYYY, h:mm:ss a')
-                console.log(format)
+                const dateFormat = moment(element.Deadline).format('MMMM Do YYYY, h:mm:ss a')
                 
                 // if(res.length) {
                     const embed =  new discord.MessageEmbed()
@@ -47,7 +46,7 @@ run: run = async(client,message,tugas) => {
                         {name: 'Individu/Kelompok', value : element.Jenis},
                         {name: 'Pengumpulan', value: element.Pengumpulan},
                         {name: 'Yang masukkin Tugas', value:element.Author},
-                        {name: 'Deadline', value: element.Deadline},
+                        {name: 'Deadline', value: dateFormat},
                         {name: 'Time Remaining' ,value: timeRemaining}
                     )
             
