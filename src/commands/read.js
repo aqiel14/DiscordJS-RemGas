@@ -32,9 +32,10 @@ run: run = async(client,message,tugas) => {
                 let minutes = moment.duration(time).minutes();
                 let hours   = moment.duration(time).hours();
                 let days    = moment.duration(time).days();
-                console.log(days+' Days '+hours+' Hours ');
                 let timeRemaining = days+' Days '+hours+' Hours Remaining'
                 
+                const format = moment().format(element.Deadline)
+                console.log(format)
                 
                 // if(res.length) {
                     const embed =  new discord.MessageEmbed()
