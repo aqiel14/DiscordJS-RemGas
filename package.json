@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "ansi-colors": "^4.1.1",
+    "axios": "^0.20.0",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
     "moment": "^2.29.1",
