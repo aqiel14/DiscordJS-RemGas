@@ -9,24 +9,19 @@ module.exports = {
 run: run = async(client,message,tugas,args) => {
 
     let query = message.content.slice(7).split(';');
-    const contoh = `?tugas
+    const contoh = 
+    `?tugas
     LMS;
-    BIJIPELER;
+    TKMTI;
     Individu;
-    tes123333;
+    Tugas 08;
     Thursday, 14 November 2020, 11:59 PM`;
     if(message.content === '?tugas') {
         const tutorialembed = new discord.MessageEmbed()
         .setTitle('Cara post tugas')
         .setDescription('?tugas pengumpulan(LMS/etc) ; Mata Kuliah ; Jenis Tugas (Kelompok/Individu) ; deskripsi tugas ; deadline(copas dari LMS(TIPE DATA HARUS `DATE` GAES)')
         .addFields(
-            {name: 'Ikuti Contoh', value: 
-            `?tugas
-            LMS;
-            BIJIPELER;
-            Individu;
-            tes123333;
-            Thursday, 14 November 2020, 11:59 PM`
+            {name: 'Ikuti Contoh', value: contoh
         }
         )
         message.reply(tutorialembed);
