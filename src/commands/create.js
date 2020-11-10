@@ -23,8 +23,8 @@ run: run = async(client,message,tugas,args) => {
         .setTitle('Cara post tugas')
         .setDescription('?tugas pengumpulan(LMS/etc) ; Mata Kuliah ; Jenis Tugas (Kelompok/Individu) ; deskripsi tugas ; deadline(copas dari LMS(TIPE DATA HARUS `DATE` !!))')
         .addFields(
-            {name: 'Ikuti Contoh', value: contoh1}
-            {name: 'Atau', value:contoh2}
+            {name: 'Ikuti Contoh', value: contoh1},
+            {name: 'Atau', value: contoh2}
         )
         message.reply(tutorialembed);
     }
