@@ -19,7 +19,7 @@ run: run = async(client,message,tugas,args) => {
     if(message.content === '?tugas') {
         const tutorialembed = new discord.MessageEmbed()
         .setTitle('Cara post tugas')
-        .setDescription('?tugas pengumpulan(LMS/etc) ; Mata Kuliah ; Jenis Tugas (Kelompok/Individu) ; deskripsi tugas ; deadline(copas dari LMS(TIPE DATA HARUS `DATE` GAES)')
+        .setDescription('?tugas pengumpulan(LMS/etc) ; Mata Kuliah ; Jenis Tugas (Kelompok/Individu) ; deskripsi tugas ; deadline(copas dari LMS(TIPE DATA HARUS `DATE` !!))')
         .addFields(
             {name: 'Ikuti Contoh', value: contoh
         }
