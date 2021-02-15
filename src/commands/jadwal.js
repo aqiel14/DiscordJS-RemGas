@@ -1,16 +1,14 @@
-
 const discord = require('discord.js');
 
 module.exports = {
-    run: async(client,message) => {
+  run: async (client, message) => {
+    const jadwalembed = new discord.MessageEmbed()
+      .setColor('#90EE90')
+      .setTitle('Jadwal')
+      .setImage('https://i.imgur.com/QfUAPaI.png');
+    message.reply(jadwalembed);
+  },
 
-        const jadwalembed =  new discord.MessageEmbed()
-                    .setColor('#90EE90')
-                    .setTitle('Jadwal')
-                    .setImage('https://i.imgur.com/iQDoWwJ.png')
-        message.reply(jadwalembed);
-    },
-    
-    aliases: ['jadwal','schedule'],
-    description: 'lihat jadwal EISD'
-}
+  aliases: ['jadwal', 'schedule'],
+  description: 'lihat jadwal EISD',
+};
